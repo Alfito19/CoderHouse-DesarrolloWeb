@@ -5,7 +5,7 @@
 }
 body {
     color: black;
-    background-color: rgb(228, 223, 217);
+    background-color: rgb(241, 233, 215);
     margin: 0;
 }
 
@@ -146,11 +146,11 @@ main h1{
     background-color: rgba(189, 180, 168, 0.5);
     border-radius: 25px;
 }
-.cswitchesproducts img{
+.cproducts img{
     border-radius: 25px;
     filter: drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.25));
 }
-.cswitchesproducts h3{
+.cproducts h3{
     padding: 10px;
     color: white;
     font-weight: 300;
@@ -184,25 +184,25 @@ main h1{
     justify-content: center;
     align-items: center;
 }
-.PswitchMuestra img{
+.PMuestra img{
     border-radius: 25px;
     filter: drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.25));
 }
-.PswitchMuestra p{
+.PMuestra p{
     padding: 15px;
     width: 70%;
     background-color: rgba(189, 180, 168, 0.5);
     border-radius: 25px;
 }
-.PswitchMuestra h2{
+.PMuestra h2{
     font-weight: 400;
     font-size: 35px;
 }
-.PswitchMuestra h3{
+.PMuestra h3{
     font-weight: 500;
     font-size: 30px;
 }
-.PswitchMuestra input{
+.PMuestra input{
     padding: 5px;
     background-color: rgb(206, 202, 202);
     border: black 1px solid;
@@ -254,7 +254,6 @@ main h1{
     /* HEADER */
     .conteiner-nav{
         display: grid;
-
     }
     .conteiner-nav{
         position:relative;
@@ -347,7 +346,7 @@ main h1{
     }
 
     /* PRODUCTS */
-    .cswitchesproducts{
+    .cproducts{
         margin: 50px 25px;
         display: grid;
         text-align: center;
@@ -370,12 +369,12 @@ main h1{
         display: flex;
         flex-direction: column;
     }
-    .PswitchMuestra{
+    .PMuestra{
         display: flex;
         justify-content: space-evenly;
         margin-top:5%;
     }
-    .PswitchMuestra img{
+    .PMuestra img{
         width: 30%;
         margin: 5%;
     }
@@ -451,7 +450,7 @@ main h1{
     /* FOOTER */
     footer{
         display:grid;
-        grid-template-columns: 30% 70%;
+        grid-template-columns: 30% 60%;
         column-gap: 40px;
         grid-template-areas: 
         "footer-content footer-right";
@@ -576,7 +575,7 @@ main h1{
     }
 
     /* PRODUCTS */
-    .cswitchesproducts{
+    .cproducts{
         margin: 50px 0px;
         display: grid;
         text-align: center;
@@ -602,13 +601,13 @@ main h1{
         display: flex;
         flex-direction: column;
     }
-    .PswitchMuestra{
+    .PMuestra{
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top:5%;
     }
-    .PswitchMuestra img{
+    .PMuestra img{
         width: 70%;
         margin: 5%;
     }
@@ -783,7 +782,7 @@ main h1{
     }
 
     /* PRODUCTS */
-    .cswitchesproducts{
+    .cproducts{
         display: grid;
         text-align: center;
         justify-content: center;
@@ -812,13 +811,13 @@ main h1{
         display: flex;
         flex-direction: column;
     }
-    .PswitchMuestra{
+    .PMuestra{
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top:5%;
     }
-    .PswitchMuestra img{
+    .PMuestra img{
         width: 80%;
         margin: 5%;
     }
