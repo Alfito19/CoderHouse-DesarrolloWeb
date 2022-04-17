@@ -1,0 +1,131 @@
+@import "variables";
+@import "responsive";
+@import "estructura";
+@import "ids";
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.conteiner-collection{
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 26px;
+    img{
+        width: 100%;
+        border-radius: 25px;
+        filter: drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.25));
+    }
+    a{
+        h2{
+            font-weight: 300;
+            width: 100%;
+            border-radius: 25px;
+            text-align: center;
+        }
+        h3{
+            font-weight: 300;
+            width: 100%;
+            border-radius: 25px;
+            text-align: center;
+        }
+    }
+}
+.collections-index {
+    a{
+    text-decoration: none;
+    color: white;
+    }
+}
+.cproducts {
+    img{
+    border-radius: 25px;
+    filter: drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.25));
+    }
+    h3{
+        padding: 10px;
+        color: white;
+        font-weight: 300;
+    }
+}
+.description-text-collection{
+    width: 100%;
+}
+#conteiner-nav-login{
+    .login-body{
+        grid-area: form;
+    }
+    .login-box{
+        background-color: rgba(100, 100, 102, 0.568);
+        border: black 2px groove;
+        border-radius: 20px;
+    }
+}
+.PMuestra {
+    img{
+    border-radius: 25px;
+    filter: drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.25));
+    }
+    p{
+        padding: 15px;
+        width: 70%;
+        background-color: rgba(189, 180, 168, 0.5);
+        border-radius: 25px;
+    }
+    h2{
+        font-weight: 400;
+        font-size: 35px;
+    }
+    h3{
+        font-weight: 500;
+        font-size: 30px;
+    }
+    input{
+        padding: 5px;
+        background-color: rgb(206, 202, 202);
+        border: black 1px solid;
+        color: black;
+        font-weight: 500;
+        font-size: 20px;
+    }
+}
+.PSContent-button-top{
+    grid-area: pscontent-top;
+}
+.PSContent-button-down{
+    grid-area: pscontent-down;
+}
+.PSRecomended{
+    img{
+    border-radius: 25px;
+    filter: drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.25));
+    }
+    h2{
+        text-align: center;
+        font-weight: 400;
+        margin-top: 5%;
+    }
+    h4{
+        text-align: center;
+        color: white;
+        font-weight: 300;
+    }
+    .conteiner-recomended{
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 26px;
+        img{
+            width: 100%;
+        }
+    }
+}
+.aboutus-body{
+    h2{
+        font-weight: 300;
+        font-size: 50px;
+        color: white;
+    }h3{
+        font-weight: 300;
+        font-size: 15px;
+        width: 50%;
+    }
+}
