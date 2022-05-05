@@ -19,35 +19,31 @@
     font-weight: 300;
 }
 .collections-index{
-    #collection1{
-        grid-area: collection1;
-    }
-    #collection2{
-        grid-area: collection2;
-    }
-    #collection3{
-        grid-area: collection3;
-    }
-    #collection4{
-        grid-area: collection4;
+        $collections:(
+        1: collection1,
+        2: collection2,
+        3: collection3,
+        4: collection4,
+    );
+    @each $collectionlist, $collectiongridarea  in $collections {
+        #collection#{$collectionlist}{
+            grid-area: $collectiongridarea;
+        }
+    };
+    @mixin collection-p($gridarea,$collectionpadding,$collectionborderradius) {
+        grid-area: $gridarea;
+        padding:$collectionpadding;
+        background-color: rgba(189, 180, 168, 0.5);
+        border-radius: $collectionborderradius;
     }
     #collection1-p{
-        grid-area: descrip1;
-        padding: 10px;
-        background-color: rgba(189, 180, 168, 0.5);
-        border-radius: 25px;
+        @include collection-p(descrip1,15px,25px)
     }
     #collection2-p{
-        grid-area: descrip2;
-        padding: 10px;
-        background-color: rgba(189, 180, 168, 0.5);
-        border-radius: 25px;
+        @include collection-p(descrip1,15px,25px)
     }
     #collection3-p{
-        grid-area: descrip3;
-        padding: 10px;
-        background-color: rgba(189, 180, 168, 0.5);
-        border-radius: 25px;
+        @include collection-p(descrip1,15px,25px)
     }
     #collection4-p{
         grid-area: descrip4;

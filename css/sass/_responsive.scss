@@ -66,25 +66,23 @@
         .collection-size{
             width: 30%;
         }
-        .full-collection1{
+        @mixin full-collection ($full-collectiondirection,$full-collectionmargin,$full-collectionalignitems){  
             display: flex;
-            flex-direction: row;
-            margin:20px;
+            flex-direction: $full-collectiondirection;
+            margin:$full-collectionmargin;
+            align-items: $full-collectionalignitems;
+        }
+        .full-collection1{
+            @include full-collection(row, 20px, auto)
         }
         .full-collection2{
-            display: flex;
-            flex-direction: row;
-            margin:20px;
+            @include full-collection(row, 20px, auto)
         }
         .full-collection3{
-            display: flex;
-            flex-direction: row;
-            margin:20px;
+            @include full-collection(row, 20px, auto)
         }
         .full-collection4{
-            display: flex;
-            flex-direction: row;
-            margin:20px;
+            @include full-collection(row, 20px, auto)
         }
         #collection1-p{
             max-width: 50%;
@@ -179,20 +177,20 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    .login-box img{
-        width: 70px;
+        img{
+            width: 70px;
+        }
     }
     .login-forms{
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .login-forms input{
-        height: 25px;
-        margin: 5px;
-        border-radius: 25px;
-        border: black 1px solid;
+        input{
+            height: 25px;
+            margin: 5px;
+            border-radius: 25px;
+            border: black 1px solid;
+        }
     }
     #forgotypass{
         color:rgb(77, 74, 74);
@@ -300,25 +298,23 @@
         .collection-size{
             width: 55%;
         }
-        .full-collection1{
+        @mixin full-collection ($full-collectiondirection,$full-collectionmargin,$full-collectionalignitems){  
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-direction: $full-collectiondirection;
+            margin:$full-collectionmargin;
+            align-items: $full-collectionalignitems;
+        }
+        .full-collection1{
+            @include full-collection(column, auto, center)
         }
         .full-collection2{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include full-collection(column, auto, center)
         }
         .full-collection3{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include full-collection(column, auto, center)
         }
         .full-collection4{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include full-collection(column, auto, center)
         }
         #collection1-p{
             max-width: 70%;
@@ -512,25 +508,23 @@
         .collection-size{
             width: 90%;
         }
-        .full-collection1{
+        @mixin full-collection ($full-collectiondirection,$full-collectionmargin,$full-collectionalignitems){  
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-direction: $full-collectiondirection;
+            margin:$full-collectionmargin;
+            align-items: $full-collectionalignitems;
+        }
+        .full-collection1{
+            @include full-collection(column, auto, center)
         }
         .full-collection2{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include full-collection(column, auto, center)
         }
         .full-collection3{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include full-collection(column, auto, center)
         }
         .full-collection4{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include full-collection(column, auto, center)
         }
         #collection1-p{
             max-width: 90%;
