@@ -87,16 +87,16 @@
     align-items: auto;
   }
   .collections-index #collection1-p {
-    max-width: 50%;
+    width: 50%;
   }
   .collections-index #collection2-p {
-    max-width: 50%;
+    width: 50%;
   }
   .collections-index #collection3-p {
-    max-width: 50%;
+    width: 50%;
   }
   .collections-index #collection4-p {
-    max-width: 50%;
+    width: 50%;
   }
 
   /* FIN MAIN COLLECTIONS */
@@ -114,6 +114,7 @@
   .description-text-collection h2 {
     font-weight: 300;
     color: white;
+    margin: -10px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
   }
@@ -163,22 +164,33 @@
   }
 
   /* FIN ProductStore */
-  /*LOG IN (STAND BY)*/
-  #conteiner-nav-login {
-    display: grid;
-    justify-content: space-evenly;
-    grid-template-areas: " . form . ";
+  /*LOG IN*/
+  #body-login {
+    background-color: #574A33;
+  }
+
+  #header-login {
+    position: relative;
+    top: 0;
+    z-index: 2;
+  }
+
+  .login-body {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .login-box {
     display: flex;
-    padding: 30px 30px 30px 30px;
+    padding: 30px 50px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .login-box img {
-    width: 70px;
+    width: 100px;
   }
 
   .login-forms {
@@ -189,20 +201,34 @@
   .login-forms input {
     height: 25px;
     margin: 5px;
+    padding: 0px 10px;
     border-radius: 25px;
     border: black 1px solid;
   }
 
   #forgotypass {
-    color: rgb(77, 74, 74);
+    color: rgb(46, 44, 44);
     font-size: 12px;
+    font-weight: 500;
   }
 
-  #login-button {
-    padding-left: 10px;
+  /* FIN LOG IN*/
+  /* ABOUT US*/
+  .aboutus-body {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+  .aboutus-body h2 {
+    margin-left: 5%;
+  }
+  .aboutus-body h3 {
+    margin: 0% 10%;
   }
 
-  /* FIN LOG IN (STAND BY) */
+  /* FIN ABOUT US */
   /* FOOTER */
   footer {
     display: grid;
@@ -344,6 +370,7 @@
 
   .description-text-collection h2 {
     font-weight: 300;
+    margin: -10px;
     color: white;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
@@ -401,6 +428,75 @@
   }
 
   /* FIN ProductStore */
+  /*LOG IN*/
+  #body-login {
+    background: rgb(241, 233, 215);
+  }
+
+  #header-login {
+    position: relative;
+    top: 0;
+    z-index: 2;
+  }
+
+  .login-body {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .login-box {
+    display: flex;
+    padding: 30px 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-box img {
+    width: 100px;
+  }
+
+  .login-forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .login-forms input {
+    height: 25px;
+    margin: 5px;
+    padding: 0px 10px;
+    border-radius: 25px;
+    border: black 1px solid;
+  }
+
+  #forgotypass {
+    color: rgb(46, 44, 44);
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  /* FIN LOG IN*/
+  /* ABOUT US*/
+  .image-background {
+    display: none;
+  }
+
+  .aboutus-body {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+  .aboutus-body h2 {
+    margin-left: 0;
+  }
+  .aboutus-body h3 {
+    margin: 0% 10%;
+  }
+
+  /* FIN ABOUT US */
   /* FOOTER */
   footer {
     display: grid;
@@ -455,10 +551,13 @@
   nav .nav-menu {
     font-size: 15px;
   }
-  nav .nav-menu ul li {
+  nav .nav-menu ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  nav .nav-menu ul li {
+    padding: 8px 15px;
   }
   nav .nav-menu ul li a {
     padding: 8px 15px;
@@ -606,6 +705,77 @@
   }
 
   /* FIN ProductStore */
+  /*LOG IN*/
+  #body-login {
+    background: rgb(241, 233, 215);
+    min-height: 120vh;
+  }
+
+  #header-login {
+    position: relative;
+    top: 0;
+    z-index: 2;
+  }
+
+  .login-body {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .login-box {
+    display: flex;
+    padding: 30px 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-box img {
+    width: 100px;
+  }
+
+  .login-forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .login-forms input {
+    height: 25px;
+    margin: 5px;
+    padding: 0px 10px;
+    border-radius: 25px;
+    border: black 1px solid;
+  }
+
+  #forgotypass {
+    color: rgb(46, 44, 44);
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  /* FIN LOG IN*/
+  /* ABOUT US*/
+  .image-background {
+    display: none;
+  }
+
+  .aboutus-body {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+  .aboutus-body h2 {
+    margin-left: 0;
+    font-size: small;
+  }
+  .aboutus-body h3 {
+    margin: 0% 10%;
+  }
+
+  /* FIN ABOUT US */
   /* FOOTER */
   footer {
     display: flex;
@@ -640,6 +810,9 @@ body {
   color: black;
   background-color: rgb(241, 233, 215);
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 nav {
@@ -693,6 +866,7 @@ main h1 {
 
 footer {
   background-color: #1d1c1c;
+  margin-top: auto;
 }
 footer .footer-txt a {
   text-decoration: none;
@@ -838,10 +1012,11 @@ footer .footer-right h3 {
   width: 100%;
 }
 
-#conteiner-nav-login .login-body {
+.login-body {
   grid-area: form;
 }
-#conteiner-nav-login .login-box {
+
+.login-box {
   background-color: rgba(100, 100, 102, 0.568);
   border: black 2px groove;
   border-radius: 20px;
@@ -897,14 +1072,15 @@ footer .footer-right h3 {
 }
 
 .aboutus-body h2 {
-  font-weight: 300;
-  font-size: 50px;
+  font-weight: 500;
+  font-size: 60px;
   color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 }
 .aboutus-body h3 {
-  font-weight: 300;
-  font-size: 15px;
-  width: 50%;
+  font-weight: 400;
+  font-size: 17px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 }
 
 /*# sourceMappingURL=style.css.map */

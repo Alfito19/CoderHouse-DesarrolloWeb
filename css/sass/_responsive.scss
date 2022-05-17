@@ -85,16 +85,16 @@
             @include full-collection(row, 20px, auto)
         }
         #collection1-p{
-            max-width: 50%;
+            width: 50%;
         }
         #collection2-p{
-            max-width: 50%;
+            width: 50%;
         }
         #collection3-p{
-            max-width: 50%;
+            width: 50%;
         }
         #collection4-p{
-            max-width: 50%;
+            width: 50%;
         }
     }
     /* FIN MAIN COLLECTIONS */
@@ -114,6 +114,7 @@
         h2{
         font-weight: 300;
         color: white;
+        margin: -10px;
         padding: 20px;
         background-color: rgba(0, 0, 0, 0.7);
         }
@@ -164,21 +165,29 @@
         }
     }
     /* FIN ProductStore */
-    /*LOG IN (STAND BY)*/
-    #conteiner-nav-login{
-        display: grid;
-        justify-content: space-evenly;
-        grid-template-areas: 
-        " . form . ";
+    /*LOG IN*/
+    #body-login{
+        background-color: #574A33;
+    }
+    #header-login{
+        position: relative;
+        top: 0;
+        z-index: 2;
+    }
+    .login-body{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
     }
     .login-box{
         display: flex;
-        padding: 30px 30px 30px 30px;
+        padding: 30px 50px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         img{
-            width: 70px;
+            width: 100px;
         }
     }
     .login-forms{
@@ -188,18 +197,32 @@
         input{
             height: 25px;
             margin: 5px;
+            padding: 0px 10px;
             border-radius: 25px;
             border: black 1px solid;
         }
     }
     #forgotypass{
-        color:rgb(77, 74, 74);
+        color:rgb(46, 44, 44);
         font-size: 12px;
+        font-weight: 500;
     }
-    #login-button{
-        padding-left:10px;
+    /* FIN LOG IN*/
+    /* ABOUT US*/
+    .aboutus-body{
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 80%;
+        h2{
+            margin-left: 5%;
+        }
+        h3{
+            margin: 0% 10%;
+        }
     }
-    /* FIN LOG IN (STAND BY) */
+    /* FIN ABOUT US */
     /* FOOTER */
     footer{
         display:grid;
@@ -348,6 +371,7 @@
     .description-text-collection {
         h2{
         font-weight: 300;
+        margin:-10px;
         color: white;
         padding: 20px;
         background-color: rgba(0, 0, 0, 0.7);
@@ -405,6 +429,67 @@
         display: none;
     }
     /* FIN ProductStore */
+    /*LOG IN*/
+    #body-login{
+        background:rgb(241, 233, 215);
+    }
+    #header-login{
+        position: relative;
+        top: 0;
+        z-index: 2;
+    }
+    .login-body{
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .login-box{
+        display: flex;
+        padding: 30px 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 100px;
+        }
+    }
+    .login-forms{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input{
+            height: 25px;
+            margin: 5px;
+            padding: 0px 10px;
+            border-radius: 25px;
+            border: black 1px solid;
+        }
+    }
+    #forgotypass{
+        color:rgb(46, 44, 44);
+        font-size: 12px;
+        font-weight: 500;
+    }
+    /* FIN LOG IN*/
+    /* ABOUT US*/
+    .image-background{
+        display: none;
+    }
+    .aboutus-body{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 80%;
+        h2{
+            margin-left:0;
+        }
+        h3{
+            margin: 0% 10%;
+        }
+    }
+    /* FIN ABOUT US */
     /* FOOTER */
     footer{
         display:grid;
@@ -460,10 +545,11 @@
         .nav-menu{
             font-size: 15px;
             ul{
-                li{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                li{
+                    padding: 8px 15px;
                     a{
                         padding: 8px 15px;
                     }
@@ -558,11 +644,13 @@
         "product7"
         "product8";
     }
-    .description-text-collection h2{
+    .description-text-collection{
+        h2{
         font-weight: 500;
         color: black;
         padding: 20px;
         text-align: center;
+        }
     }
     /* FIN PRODUCTS */
     /* ProductStore */
@@ -613,6 +701,69 @@
         display: none;
     }
     /* FIN ProductStore */
+        /*LOG IN*/
+        #body-login{
+            background:rgb(241, 233, 215);
+            min-height: 120vh;
+        }
+        #header-login{
+            position: relative;
+            top: 0;
+            z-index: 2;
+        }
+        .login-body{
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .login-box{
+            display: flex;
+            padding: 30px 30px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 100px;
+            }
+        }
+        .login-forms{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            input{
+                height: 25px;
+                margin: 5px;
+                padding: 0px 10px;
+                border-radius: 25px;
+                border: black 1px solid;
+            }
+        }
+        #forgotypass{
+            color:rgb(46, 44, 44);
+            font-size: 12px;
+            font-weight: 500;
+        }
+        /* FIN LOG IN*/
+        /* ABOUT US*/
+        .image-background{
+            display: none;
+        }
+        .aboutus-body{
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 80%;
+            h2{
+                margin-left:0;
+                font-size: small;
+            }
+            h3{
+                margin: 0% 10%;
+            }
+        }
+        /* FIN ABOUT US */
     /* FOOTER */
     footer{
         display:flex;

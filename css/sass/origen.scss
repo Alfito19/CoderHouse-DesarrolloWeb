@@ -55,15 +55,13 @@
 .description-text-collection{
     width: 100%;
 }
-#conteiner-nav-login{
-    .login-body{
-        grid-area: form;
-    }
-    .login-box{
-        background-color: rgba(100, 100, 102, 0.568);
-        border: black 2px groove;
-        border-radius: 20px;
-    }
+.login-body{
+    grid-area: form;
+}
+.login-box{
+    background-color: rgba(100, 100, 102, 0.568);
+    border: black 2px groove;
+    border-radius: 20px;
 }
 .PMuestra {
     img{
@@ -122,12 +120,13 @@
 }
 .aboutus-body{
     h2{
-        font-weight: 300;
-        font-size: 50px;
+        font-weight: 500;
+        font-size: 60px;
         color: white;
+        text-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.8);
     }h3{
-        font-weight: 300;
-        font-size: 15px;
-        width: 50%;
+        font-weight: 400;
+        font-size: 17px;
+        text-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.8);
     }
 }

@@ -1,4 +1,0 @@
-en sass _isd.scss hay un mixin y en _responsive hay 3
-en origen.scss hay un extend
-en _ids.scss uso map y each
-No pude usar extend en _responsive porque me daba error, no se puede usar extend en media querry
