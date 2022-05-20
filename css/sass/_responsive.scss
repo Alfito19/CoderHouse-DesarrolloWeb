@@ -125,15 +125,23 @@
         display: flex;
         flex-direction: column;
         .PMuestra{
-            display: flex;
-            justify-content: space-evenly;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-areas: "pmuestraimg pscontentbutton";
             margin-top:5%;
-            img{
-                width: 30%;
-                margin: 5%;
+            .imgpmuestra{
+                display: flex;
+                justify-content: flex-end;
+                grid-area: pmuestraimg;
+                img{
+                    width: 70%;
+                    object-fit:contain;
+                    margin: 5%;
+                }
             }
         }
         .PSContent-button{
+            grid-area: pscontentbutton;
             display: grid;
             grid-template-areas: 
             "pscontent-top"
@@ -142,7 +150,7 @@
                 display: flex;
                 flex-direction: column;
                 h2{
-                    margin-top: 6%;
+                    margin-top: 3%;
                 }
             }
             .PSContent-button-down{
@@ -383,14 +391,17 @@
         display: flex;
         flex-direction: column;
         .PMuestra{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top:5%;
-            img{
-                width: 70%;
-                margin: 5%;
+            .imgpmuestra{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top:5%;
+                img{
+                    width: 70%;
+                    margin: 5%;
+                }
             }
+            
         }
         .PSContent-button{
             display: grid;
@@ -402,6 +413,7 @@
                 flex-direction: column;
                 align-items: center;
                 h2{
+                    text-align: center;
                     margin-bottom: 5%;
                 }
             }
@@ -658,13 +670,15 @@
         display: flex;
         flex-direction: column;
         .PMuestra{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top:5%;
-            img{
-                width: 80%;
-                margin: 5%;
+            .imgpmuestra{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top:5%;
+                img{
+                    width: 80%;
+                    margin: 5%;
+                }
             }
         }
         .PSContent-button{
@@ -677,6 +691,7 @@
                 flex-direction: column;
                 align-items: center;
                 h2{
+                    text-align: center;
                     margin-bottom: 5%;
                 }
             }

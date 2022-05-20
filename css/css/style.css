@@ -126,15 +126,23 @@
     flex-direction: column;
   }
   .PSBody .PMuestra {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "pmuestraimg pscontentbutton";
     margin-top: 5%;
   }
-  .PSBody .PMuestra img {
-    width: 30%;
+  .PSBody .PMuestra .imgpmuestra {
+    display: flex;
+    justify-content: flex-end;
+    grid-area: pmuestraimg;
+  }
+  .PSBody .PMuestra .imgpmuestra img {
+    width: 70%;
+    object-fit: contain;
     margin: 5%;
   }
   .PSBody .PSContent-button {
+    grid-area: pscontentbutton;
     display: grid;
     grid-template-areas: "pscontent-top" "pscontent-down";
   }
@@ -143,7 +151,7 @@
     flex-direction: column;
   }
   .PSBody .PSContent-button .PSContent-button-top h2 {
-    margin-top: 6%;
+    margin-top: 3%;
   }
   .PSBody .PSContent-button .PSContent-button-down {
     margin-top: 5%;
@@ -382,13 +390,13 @@
     display: flex;
     flex-direction: column;
   }
-  .PSBody .PMuestra {
+  .PSBody .PMuestra .imgpmuestra {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 5%;
   }
-  .PSBody .PMuestra img {
+  .PSBody .PMuestra .imgpmuestra img {
     width: 70%;
     margin: 5%;
   }
@@ -402,6 +410,7 @@
     align-items: center;
   }
   .PSBody .PSContent-button .PSContent-button-top h2 {
+    text-align: center;
     margin-bottom: 5%;
   }
   .PSBody .PSContent-button .PSContent-button-down {
@@ -662,13 +671,13 @@
     display: flex;
     flex-direction: column;
   }
-  .PSBody .PMuestra {
+  .PSBody .PMuestra .imgpmuestra {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 5%;
   }
-  .PSBody .PMuestra img {
+  .PSBody .PMuestra .imgpmuestra img {
     width: 80%;
     margin: 5%;
   }
@@ -682,6 +691,7 @@
     align-items: center;
   }
   .PSBody .PSContent-button .PSContent-button-top h2 {
+    text-align: center;
     margin-bottom: 5%;
   }
   .PSBody .PSContent-button .PSContent-button-down {
@@ -1037,8 +1047,9 @@ footer .footer-right h3 {
   font-size: 30px;
 }
 .PMuestra input {
-  padding: 5px;
-  background-color: rgb(206, 202, 202);
+  padding: 7px;
+  border-radius: 10px;
+  background-color: rgb(209, 203, 175);
   border: black 1px solid;
   color: black;
   font-weight: 500;
